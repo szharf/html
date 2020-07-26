@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>首页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="js/jquery-3.4.1.min.js"></script>
+
+
+</head>
+
+<style>
+
+	
+
+	
+
+
+</style>
+
+<body>
+<div style="height: 100%;">
+	
+
+
+<div class="border">
+	<div id="labels">
+		<ul>
+			<!--一-->
+			<li  class="labels labels_1" >
+				<p id="labels_1" >搜索</p><!--一级标签-->
+				<div class="tab  one">
+					<p><a href="#" target="_blank">百度</a></p><!--二级标签-->
+				</div>
+			</li>
+			<!--二-->
+			<li class="labels labels_2">
+				<p  id="labels_2" >工作</p><!--一级标签-->
+				<div class="tab  two">
+					<p><a href="#" target="_blank">源码之家</a></p><!--二级标签-->
+					<p><a href="#" target="_blank">PHP中文网</a></p><!--二级标签-->
+					<p><a href="#" target="_blank">W3school</a></p><!--二级标签-->
+					<p><a href="#" target="_blank">DeepL翻译</a></p><!--二级标签-->
+				</div>
+			</li>
+			<!--三-->
+			<li class="labels labels_3">
+				<p id="labels_3" >学习</p><!--一级标签-->
+				<div class="tab  three">
+					<p><a href="#" target="_blank">oeasy</a></p><!--二级标签-->
+					<p><a href="#" target="_blank">考试酷</a></p><!--二级标签-->
+					<p><a href="#" target="_blank">五分钟学算法</a></p><!--二级标签-->
+					<p><a href="#" target="_blank">让人自学网</a></p><!--二级标签-->
+					<p><a href="#" target="_blank">How2j</a></p><!--二级标签-->
+				</div>
+			</li>
+			<!--四-->
+			<li  class="labels labels_4">
+				<p  id="labels_4" >视频</p><!--一级标签-->
+				<div  class="tab  four">
+					<p><a href="#" target="_blank">哔哩哔哩</a></p><!--二级标签-->
+					<p ><a href="#" target="_blank">全网vip解析</a></p><!--二级标签-->
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.border{width: 200px; height: 100%;background-color: #5daeff;}
+			 div,ul li,p,a{ list-style: none;}
+			 
+			 p{text-align: center;color: white;line-height: 50px;font-size: 20px;}
+			 a{
+				 color: white;text-decoration: none;
+			 }
+			 .tab{display: none;background-color:#77BCF7; }
+			 .tab p{font-size: 16px;line-height: 40px;}
+			.labels{border-bottom:solid gainsboro 1px;}
+			p:hover{color: yellow;}
+			
+		</style>
+		<script>
+			$(function(){
+				$(".labels_1").mouseover(function () {
+					  $(".one").slideDown();
+					  
+					}).mouseleave(function () {
+				  $(".one").slideUp(); 	
+				 })
+				$(".labels_2").mouseover(function () {
+				  $(".two").slideDown();
+				  
+				}).mouseleave(function () {
+				  $(".two").slideUp(); 	
+				 })
+				$(".labels_3").mouseover(function () {
+				  $(".three").slideDown();
+				}).mouseleave(function () {
+				  $(".three").slideUp(); 	
+				 })
+				$(".labels_4").mouseover(function () {
+				  $(".four").slideDown();
+				  
+				}).mouseleave(function () {
+				  $(".four").slideUp(); 	
+				 })
+			})
+		</script>
+</div>
+</body>
+</html>
